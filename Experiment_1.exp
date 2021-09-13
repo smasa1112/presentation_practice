@@ -150,7 +150,27 @@
 <minpv></minpv>
 <nam></nam>
 <one_processor>2</one_processor>
-<oports></oports>
+<oports>
+<p>
+<ama>5</ama>
+<ami>0</ami>
+<at>0</at>
+<dpw>5</dpw>
+<dsdi>1</dsdi>
+<dsi>4</dsi>
+<dsn>ao1</dsn>
+<igm>0</igm>
+<il>0</il>
+<ivm>0</ivm>
+<mtype>dig</mtype>
+<piai>Dev1</piai>
+<pian>NI-DAQmx</pian>
+<pihpn>PCI-6259</pihpn>
+<pindex>2</pindex>
+<rs>1</rs>
+<rt>1</rt>
+</p>
+</oports>
 <out_encrypt_key></out_encrypt_key>
 <pi_list></pi_list>
 <plat>1</plat>
@@ -171,6 +191,23 @@
 <piai>COM1</piai>
 <pian>Serial Port</pian>
 <pihpn>COM1</pihpn>
+</device>
+<device>
+<parameters>
+<cts>0</cts>
+<dsrin>0</dsrin>
+<dsrout>0</dsrout>
+<dtr>disable</dtr>
+<rts>disable</rts>
+<set_fifo>1</set_fifo>
+<spd></spd>
+<spp></spp>
+<spr></spr>
+<sps></sps>
+</parameters>
+<piai>COM3</piai>
+<pian>Serial Port</pian>
+<pihpn>COM3</pihpn>
 </device>
 </port_devices>
 <rdl>
@@ -226,7 +263,7 @@
 <device>
 <device_type>3</device_type>
 <dx_device_type>0</dx_device_type>
-<name>HID Keyboard Device</name>
+<name>HID キーボード デバイス</name>
 </device>
 <device>
 <abs_axis>
@@ -268,12 +305,17 @@
 <dx_device_type>0</dx_device_type>
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
-<name>HID-compliant mouse</name>
+<name>HID 準拠マウス</name>
 </device>
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>USB Keyboard</name>
+<name>KEYB</name>
+</device>
+<device>
+<device_type>4</device_type>
+<dx_device_type>17</dx_device_type>
+<name>KEYB 1</name>
 </device>
 <device>
 <axis>
@@ -587,20 +629,6 @@
 <rng>1</rng>
 <rts>0</rts>
 <sce>
-<idv>
-<device_type>3</device_type>
-<dx_device_type>19</dx_device_type>
-<ibn>F</ibn>
-<ibn>J</ibn>
-<idn>キーボード</idn>
-<index>0</index>
-<index>1</index>
-<label></label>
-<label></label>
-<offset>33</offset>
-<offset>36</offset>
-<unique_id>1</unique_id>
-</idv>
 <overrides></overrides>
 <sfn>all_scenarios</sfn>
 </sce>
