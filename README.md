@@ -7,7 +7,7 @@
 
 - 基本的にはグローバル変数などを設定する部分(beginより上),初期変数などを作成する部分(begin-begin_pcl),プログラム言語として認識される部分(begin_pclより下)の3部分に分かれる
 
-'''
+'''sce
 [grobal_variable_zone]
 begin;
 [default_parameter_zone]
