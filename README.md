@@ -7,16 +7,13 @@
 
 - 基本的にはグローバル変数などを設定する部分(beginより上),初期変数などを作成する部分(begin-begin_pcl),プログラム言語として認識される部分(begin_pclより下)の3部分に分かれる
 
-'''sce
-[grobal_variable_zone]
-begin;
-[default_parameter_zone]
-----------
-----------
--------
-begin_pcl;
-[raw_coding_zone]
-'''
+```sce
+[grobal_variable_zone]  
+begin;  
+[default_parameter_zone]  
+begin_pcl;  
+[raw_coding_zone]  
+``` 
 
 - 簡単な操作に関しては[NBSのtutorial](https://www.neurobs.com/menu_support/menu_help_resources/intro_program)を見るのが一番簡単
 
