@@ -48,6 +48,15 @@ trial{
 	} stim_event;
 }main_trial;
 
+trial{
+	trial_duration = 1000;
+	
+	picture{
+		text{caption =""; font_size = 24; }feedback_text;
+		x=0; y=0;
+	}feedback_pic;
+}feedback_trial;
+
 begin_pcl;
 
 #parameters
@@ -80,15 +89,33 @@ begin
 end;
 trial_list.shuffle();
 
-#ptesent trials
+#present trials
 loop int i =1 until i>trial_list.count()
 begin
 	int position_index = trial_list[i][POSITION];
+	int color_index = trial_list[i][COLOR];
 	box next = colored_boxes[trial_list[i][COLOR]];
 	stim_event.set_event_code(next.description()+";"+position_code[position_index]);
+	stim_event.set_target_button(color_index);
 	stim.set_part(1,colored_boxes[trial_list[i][COLOR]]);
 	stim.set_part_x(1,x_positions[trial_list[i][POSITION]]);
+	
+	#run trial 
 	main_trial.present();
+	
+	#give feedback
+	string new_caption = "hello";
+	stimulus_data last = stimulus_manager.last_stimulus_data();
+	if(last.type()==stimulus_data::HIT)then
+		new_caption="Correct!";
+	else
+		new_caption="Incorrect";
+	end;
+	if( last.reaction_time()>1000)then
+		new_caption =  new_caption + "\n\nPlease respond as quickly as you can";
+	end;
+	feedback_text.set_caption(new_caption, true);
+	feedback_trial.present();
 	i = i + 1;
 end;
 

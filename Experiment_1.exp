@@ -1,5 +1,5 @@
 <ver>22.1</ver>
-<efn>C:\tutorial_0909\Experiment_1.exp</efn>
+<efn>C:\Users\student\Desktop\presentation_practice\Experiment_1.exp</efn>
 <author></author>
 <con>
 <pause>P</pause>
@@ -41,11 +41,11 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>C:\tutorial_0909</dsd>
+<dsd>C:\Users\student\Desktop\presentation_practice</dsd>
 <dwm>0</dwm>
 <dxv>8</dxv>
 <efs>
-<filename>C:\tutorial_0909\Experiment_1.sce</filename>
+<filename>C:\Users\student\Desktop\presentation_practice\Experiment_1.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version></exp_version>
@@ -120,7 +120,7 @@
 <idt>0</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\tutorial_0909</lfd>
+<lfd>C:\Users\student\Desktop\presentation_practice</lfd>
 <lnb>2</lnb>
 <lno>4</lno>
 <log>
@@ -130,7 +130,7 @@
 <its>0</its>
 <meta>1</meta>
 <pien>0</pien>
-<set_def_file>C:\tutorial_0909\Experiment_1.sdf</set_def_file>
+<set_def_file>C:\Users\student\Desktop\presentation_practice\Experiment_1.sdf</set_def_file>
 <stimulus_list>0</stimulus_list>
 <subject_id></subject_id>
 <subject_id_pol>0</subject_id_pol>
@@ -224,6 +224,11 @@
 <unique_id>1</unique_id>
 </device>
 <device>
+<device_type>3</device_type>
+<dx_device_type>0</dx_device_type>
+<name>HID Keyboard Device</name>
+</device>
+<device>
 <abs_axis>
 <dead_zone>0</dead_zone>
 <max>1000</max>
@@ -266,81 +271,9 @@
 <name>HID-compliant mouse</name>
 </device>
 <device>
-<device_type>3</device_type>
-<dx_device_type>0</dx_device_type>
-<name>HID Keyboard Device</name>
-</device>
-<device>
-<device_type>3</device_type>
-<dx_device_type>0</dx_device_type>
-<name>HID Keyboard Device 1</name>
-</device>
-<device>
-<abs_axis>
-<dead_zone>0</dead_zone>
-<max>1000</max>
-<min>-1000</min>
-<name>X-axis</name>
-<saturation>1</saturation>
-</abs_axis>
-<abs_axis>
-<dead_zone>0</dead_zone>
-<max>1000</max>
-<min>-1000</min>
-<name>Y-axis</name>
-<saturation>1</saturation>
-</abs_axis>
-<axis>
-<max>1000</max>
-<min>-1000</min>
-<name>X-axis</name>
-<restricted>1</restricted>
-<scale>1</scale>
-</axis>
-<axis>
-<max>1000</max>
-<min>-1000</min>
-<name>Y-axis</name>
-<restricted>1</restricted>
-<scale>1</scale>
-</axis>
-<axis>
-<max>1000</max>
-<min>-1000</min>
-<name>Wheel</name>
-<restricted>1</restricted>
-<scale>1</scale>
-</axis>
-<device_type>2</device_type>
-<dx_device_type>0</dx_device_type>
-<max_raw_pos>65535</max_raw_pos>
-<min_raw_pos>0</min_raw_pos>
-<name>HID-compliant mouse 1</name>
-</device>
-<device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>SPP310</name>
-</device>
-<device>
-<device_type>4</device_type>
-<dx_device_type>17</dx_device_type>
-<name>XPG INFAREX M20</name>
-</device>
-<device>
-<device_type>4</device_type>
-<dx_device_type>17</dx_device_type>
-<name>XPG INFAREX M20 1</name>
-</device>
-<device>
-<device_type>4</device_type>
-<dx_device_type>17</dx_device_type>
-<name>Razer BlackWidow</name>
-</device>
-<device>
-<device_type>4</device_type>
-<dx_device_type>17</dx_device_type>
-<name>Razer BlackWidow 1</name>
+<name>USB Keyboard</name>
 </device>
 <device>
 <axis>
@@ -654,12 +587,26 @@
 <rng>1</rng>
 <rts>0</rts>
 <sce>
+<idv>
+<device_type>3</device_type>
+<dx_device_type>19</dx_device_type>
+<ibn>F</ibn>
+<ibn>J</ibn>
+<idn>キーボード</idn>
+<index>0</index>
+<index>1</index>
+<label></label>
+<label></label>
+<offset>33</offset>
+<offset>36</offset>
+<unique_id>1</unique_id>
+</idv>
 <overrides></overrides>
 <sfn>all_scenarios</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>C:\tutorial_0909\Experiment_1.sce</sfn>
+<sfn>C:\Users\student\Desktop\presentation_practice\Experiment_1.sce</sfn>
 </sce>
 <sct>
 <capture_device>
